@@ -4,7 +4,7 @@ const username = "YOUR USER IS HERE"
 const password = "YOUR PASSWORD IS HERE"
 
     (async () => {
-        const browser = await puppeteer.launch({ headless: false });
+        const browser = await puppeteer.launch({ headless: true });
         const page = await browser.newPage();
         const timeout = 60000;
         page.setDefaultTimeout(timeout);
