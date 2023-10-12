@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer'); // v20.7.4 or later
 const { createCalendar } = require("./scrap");
-const username = "YOUR USER IS HERE"
-const password = "YOUR PASSWORD IS HERE"
+const username = "YOUR USER IS HERE";
+const password = "YOUR PASSWORD IS HERE";
 
     (async () => {
         const browser = await puppeteer.launch({ headless: true });
