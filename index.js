@@ -11,7 +11,7 @@ const password = "YOUR PASSWORD IS HERE"
 
         page.on("response", (res) => {
             if (res.url() === `https://sisselfservice.zewailcity.edu.eg/PowerCampusSelfService/Schedule/Student`) {
-                res.json().then((res)=>{
+                res.json().then((res) => {
                     console.log(typeof res)
                     createCalendar(JSON.parse(res))
                 })
